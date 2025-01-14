@@ -1,16 +1,27 @@
 ---
-import fotoPortada from '../../public/foto-portada.jpeg'
-import { Image } from 'astro:assets'
+import fotoPortada from '../../public/portada-tablet.jpeg'
+import { Picture } from 'astro:assets'
 ---
 
-<div class='relative h-full w-full bg-white/5'>
-	<Image
-		src={fotoPortada}
-		alt='Portada Verduchollie'
-		class='h-screen w-full object-cover object-top'
-	/>
+<div class='aspect-h-9 aspect-w-16 relative bg-white/5'>
+	<picture class='absolute'>
+		<source
+			media='(max-width: 767px)'
+			srcset='/portada-tablet.jpeg'
+		/>
+		<source
+			media='(min-width: 768px)'
+			srcset='/portada-xxl.jpeg'
+		/>
+		<Picture
+			src={fotoPortada}
+			alt='Portada Verduchollie'
+			formats={['avif', 'webp', 'jpeg']}
+			class='absolute h-screen object-cover object-center'
+		/>
+	</picture>
 	<h1
-		class='absolute left-[40%] top-[20%] select-none text-6xl font-bold uppercase text-zinc-200/70'
+		class='absolute left-1/2 top-3/4 h-fit w-fit -translate-x-1/2 transform select-none font-agrandir text-5xl font-[400] uppercase text-zinc-100 backdrop:blur-2xl md:top-1/4 md:text-6xl lg:top-1/4 lg:text-6xl xl:top-24 xl:text-7xl'
 	>
 		Verduchollie
 	</h1>
