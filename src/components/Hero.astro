@@ -1,0 +1,17 @@
+---
+import fotoPortada from '../../public/foto-portada.jpeg'
+import { Image } from 'astro:assets'
+---
+
+<div class='relative h-full w-full bg-white/5'>
+	<Image
+		src={fotoPortada}
+		alt='Portada Verduchollie'
+		class='h-screen w-full object-cover object-top'
+	/>
+	<h1
+		class='absolute left-[40%] top-[20%] select-none text-6xl font-bold uppercase text-zinc-200/70'
+	>
+		Verduchollie
+	</h1>
+</div>
