@@ -1,28 +1,42 @@
 ---
-import fotoPortada from '../../public/portada-tablet.jpeg'
-import { Picture } from 'astro:assets'
+import fotoPortada from '../../public/portada-md.jpeg'
+import { Image, Picture } from 'astro:assets'
+import Navigation from '@/components/Navigation.astro'
 ---
 
-<div class='aspect-h-9 aspect-w-16 relative bg-white/5'>
-	<picture class='absolute'>
+<div class='relative h-screen w-full overflow-hidden'>
+	<picture class='absolute inset-0 -z-10 h-full w-full'>
 		<source
-			media='(max-width: 767px)'
-			srcset='/portada-tablet.jpeg'
+			media='(max-width: 425px)'
+			srcset='/portada-movil.jpeg'
+			type='image/jpeg'
 		/>
 		<source
-			media='(min-width: 768px)'
-			srcset='/portada-xxl.jpeg'
+			media='(max-width: 768px)'
+			srcset='/portada-md.jpeg'
+			type='image/jpeg'
 		/>
-		<Picture
-			src={fotoPortada}
+		<source
+			media='(min-width: 769px)'
+			srcset='/portada-lg.jpeg'
+			type='image/jpeg'
+		/>
+		<img
+			src='/portada-lg.jpeg'
 			alt='Portada Verduchollie'
-			formats={['avif', 'webp', 'jpeg']}
-			class='absolute h-screen object-cover object-center'
+			class='h-full w-full object-cover'
 		/>
 	</picture>
-	<h1
-		class='absolute left-1/2 top-3/4 h-fit w-fit -translate-x-1/2 transform select-none font-agrandir text-5xl font-[400] uppercase text-zinc-100 backdrop:blur-2xl md:top-1/4 md:text-6xl lg:top-1/4 lg:text-6xl xl:top-24 xl:text-7xl'
+	<div
+		class='absolute inset-0 flex flex-col items-center justify-center text-center'
 	>
-		Verduchollie
-	</h1>
+		<h1
+			class='select-none font-agrandir text-[3rem] font-[400] uppercase tracking-widest text-zinc-100 md:text-[5rem] lg:text-[5rem]'
+		>
+			Verduchollie
+		</h1>
+		<section class='mt-28'>
+			<Navigation />
+		</section>
+	</div>
 </div>
