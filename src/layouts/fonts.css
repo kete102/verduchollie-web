@@ -1,0 +1,73 @@
+@tailwind base;
+
+@layer base {
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-Regular.woff2')
+			format('woff2');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-GrandHeavy.woff2')
+			format('woff2');
+		font-weight: 800;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-GrandLight.woff2')
+			format('woff2');
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-Narrow.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-TextBold.woff2')
+			format('woff2');
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-ThinItalic.woff2')
+			format('woff2');
+		font-weight: 100;
+		font-style: italic;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-Tight.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-WideBlackItalic.woff2')
+			format('woff2');
+		font-weight: 900;
+		font-style: italic;
+	}
+
+	@font-face {
+		font-family: 'Agrandir';
+		src: url('/src/assets/fonts/agrandir/Agrandir-WideLight.woff2')
+			format('woff2');
+		font-weight: 300;
+		font-style: normal;
+	}
+}
