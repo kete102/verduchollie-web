@@ -28,12 +28,14 @@ const navItems = [
 ]
 ---
 
-<nav class='flex flex-col items-center justify-center gap-y-8 font-agrandir'>
+<nav
+	class='flex flex-col items-center justify-center gap-y-8 md:ml-8 md:items-start'
+>
 	{
 		navItems.map(link => (
 			<a
 				href={link.url}
-				class='px-2 py-1 text-[2rem] transition-all hover:scale-110 hover:text-zinc-300'
+				class='rounded-md px-3 py-1.5 text-right text-2xl font-normal tracking-tighter text-amber-100/70 transition-all hover:scale-110 hover:bg-white/20 hover:text-amber-100 focus:bg-white/20 focus:text-amber-100'
 			>
 				{link.title}
 			</a>
