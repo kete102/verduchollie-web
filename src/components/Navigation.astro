@@ -1,0 +1,42 @@
+---
+const navItems = [
+	{
+		title: 'Videoclips',
+		label: 'videoclips',
+		url: '/videoclips'
+	},
+	{
+		title: 'Sesiones',
+		label: 'sesiones',
+		url: '/sesiones'
+	},
+	{
+		title: 'Bodas',
+		label: 'bodas',
+		url: '/bodas'
+	},
+	{
+		title: 'Shorts',
+		label: 'shorts',
+		url: '/shorts'
+	},
+	{
+		title: 'Contacto',
+		label: 'contacto',
+		url: 'mailto:ver@gmail.es'
+	}
+]
+---
+
+<nav class='flex flex-col items-center justify-center gap-y-8 font-agrandir'>
+	{
+		navItems.map(link => (
+			<a
+				href={link.url}
+				class='px-2 py-1 text-[2rem] transition-all hover:scale-110 hover:text-zinc-300'
+			>
+				{link.title}
+			</a>
+		))
+	}
+</nav>
