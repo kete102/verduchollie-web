@@ -1,1 +1,9 @@
-<span>logo</span>
+---
+interface Props {
+	className?: string
+}
+
+const { className } = Astro.props
+---
+
+<h3 class={className}>logo</h3>
