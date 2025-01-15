@@ -2,47 +2,54 @@
 import Instagram from '@/components/icons/Instagram.astro'
 import Linkedin from '@/components/icons/Linkedin.astro'
 import Formulario from '@/components/Formulario.tsx'
-import Logo from '@/components/icons/Logo.astro'
+import Layout from '@/layouts/Layout.astro'
 ---
 
-<section class='flex h-screen w-full flex-col items-center bg-gray-900'>
-	<div class='flex w-full justify-start pl-10 pt-10'>
-		<a
-			class='w-fit px-2 py-1 font-bold text-zinc-100'
-			href='/'
-			><Logo />
-		</a>
-	</div>
-	<div class='mx-auto max-w-screen-md px-4 py-8 lg:py-16'>
-		<h2
-			class='mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white'
-		>
-			Cont&aacute;ctame
-		</h2>
-		<p
-			class='mb-8 text-center font-light text-gray-500 sm:text-xl lg:mb-16 dark:text-gray-400'
-		>
-			Para resolver cualquier duda o contrataciones no dudes ponerte en contacto
-			conmigo
-		</p>
-		<Formulario />
-		<div class='mt-6 w-full text-center'>
-			<section
-				class='mt-4 flex w-full flex-row items-center justify-center gap-x-4'
+<Layout
+	title='Contacto - Verduchollie'
+	description='Contacta conmigo'
+>
+	<div class='relateive h-screen w-full'>
+		<div class='absolute left-6 top-6'>
+			<a
+				href='/'
+				class='text-2xl font-bold text-rose-100 md:text-3xl'
+				>logo</a
 			>
-				<a
-					href='https://www.instagram.com/verduchollie/'
-					class='hover:scale-110'
-				>
-					<Instagram class='size-6' />
-				</a>
-				<a
-					href='https://www.linkedin.com/in/irene-garc%C3%ADa-535758235/'
-					class='hover:scale-110'
-				>
-					<Linkedin class='size-6' />
-				</a>
-			</section>
 		</div>
+		<section
+			class='flex h-full flex-col items-center justify-center bg-zinc-600'
+		>
+			<div class='mx-auto max-w-screen-md px-4 py-8 lg:py-16'>
+				<h2
+					class='mb-4 text-center text-4xl font-extrabold tracking-tight text-rose-100'
+				>
+					Cont&aacute;ctame
+				</h2>
+				<p
+					class='mb-8 text-center font-light text-rose-100 sm:text-xl lg:mb-16'
+				>
+					Para resolver cualquier duda o contrataciones no dudes ponerte en
+					contacto conmigo
+				</p>
+				<Formulario />
+				<section
+					class='mt-16 flex w-full flex-row items-center justify-center gap-x-4'
+				>
+					<a
+						href='https://www.instagram.com/verduchollie/'
+						class='hover:scale-110'
+					>
+						<Instagram class='size-6' />
+					</a>
+					<a
+						href='https://www.linkedin.com/in/irene-garc%C3%ADa-535758235/'
+						class='hover:scale-110'
+					>
+						<Linkedin class='size-6' />
+					</a>
+				</section>
+			</div>
+		</section>
 	</div>
-</section>
+</Layout>
