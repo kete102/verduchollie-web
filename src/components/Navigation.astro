@@ -23,7 +23,7 @@ const navItems = [
 	{
 		title: 'Contacto',
 		label: 'contacto',
-		url: 'mailto:ver@gmail.es'
+		url: '/contacto'
 	}
 ]
 ---
@@ -33,7 +33,7 @@ const navItems = [
 		navItems.map(link => (
 			<a
 				href={link.url}
-				class='rounded-md px-3 py-1.5 text-right text-2xl font-semibold uppercase tracking-tighter text-amber-100/50 transition-all hover:scale-105 hover:text-amber-100 focus:text-amber-100 md:text-3xl lg:text-4xl'
+				class='rounded-md px-2 py-1 text-2xl font-semibold uppercase tracking-tighter text-amber-100/50 transition-all hover:scale-105 hover:text-amber-100 focus:text-amber-100 md:text-3xl lg:text-4xl'
 			>
 				{link.title}
 			</a>
