@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets'
+import fotoPortada from '../../public/portada-md.jpeg'
+---
+
+<picture class='absolute inset-0 -z-10 h-full w-full'>
+	<source
+		media='(max-width: 425px)'
+		srcset='/portada-movil.jpeg'
+		type='image/jpeg'
+	/>
+	<source
+		media='(max-width: 768px)'
+		srcset='/portada-md.jpeg'
+		type='image/jpeg'
+	/>
+	<source
+		media='(min-width: 769px)'
+		srcset='/portada-lg.jpeg'
+		type='image/jpeg'
+	/>
+	<Image
+		src={fotoPortada}
+		alt='Portada Verduchollie'
+		class='h-full w-full object-cover'
+	/>
+</picture>

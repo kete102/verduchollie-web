@@ -1,40 +1,15 @@
 ---
-import { Image } from 'astro:assets'
-import fotoPortada from '../../public/portada-md.jpeg'
 import Navigation from '@/components/Navigation.astro'
+import HeroBackground from '@/components/HeroBackground.astro'
+import HeroTitle from '@/components/HeroTitle.astro'
 ---
 
 <div class='relative h-screen w-full overflow-hidden'>
-	<picture class='absolute inset-0 -z-10 h-full w-full'>
-		<source
-			media='(max-width: 425px)'
-			srcset='/portada-movil.jpeg'
-			type='image/jpeg'
-		/>
-		<source
-			media='(max-width: 768px)'
-			srcset='/portada-md.jpeg'
-			type='image/jpeg'
-		/>
-		<source
-			media='(min-width: 769px)'
-			srcset='/portada-lg.jpeg'
-			type='image/jpeg'
-		/>
-		<Image
-			src={fotoPortada}
-			alt='Portada Verduchollie'
-			class='h-full w-full object-cover'
-		/>
-	</picture>
+	<HeroBackground />
 	<div
-		class='absolute inset-0 -top-24 z-10 ml-8 flex flex-col items-center justify-center text-left'
+		class='absolute inset-0 -top-24 z-10 ml-8 flex flex-col items-start justify-center text-left'
 	>
-		<h1
-			class='w-full select-none text-4xl font-[700] uppercase tracking-[0.2em] text-amber-400 md:text-5xl lg:text-[5rem]'
-		>
-			Verduchollie
-		</h1>
+		<HeroTitle />
 		<section class='lg:max-w-8xl mt-28 w-full max-w-3xl md:max-w-[1750px]'>
 			<Navigation />
 		</section>
