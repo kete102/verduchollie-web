@@ -13,14 +13,14 @@ function Formulario() {
 			<div>
 				<label
 					htmlFor='email'
-					className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'
+					className='mb-2 block text-lg font-medium text-rose-100'
 				>
 					Email
 				</label>
 				<input
 					type='email'
 					id='email'
-					className='focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400'
+					className='text-md block w-full rounded-lg border bg-white p-2.5 text-gray-900 shadow-sm'
 					placeholder='ejempl@email.com'
 					required
 				/>
@@ -28,14 +28,14 @@ function Formulario() {
 			<div>
 				<label
 					htmlFor='subject'
-					className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300'
+					className='mb-2 block text-lg font-medium text-rose-100'
 				>
 					Concepto
 				</label>
 				<input
 					type='text'
 					id='subject'
-					className='focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400'
+					className='text-md block w-full resize-none rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm'
 					placeholder='Contrataciones'
 					required
 				/>
@@ -43,14 +43,14 @@ function Formulario() {
 			<div className='sm:col-span-2'>
 				<label
 					htmlFor='message'
-					className='mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400'
+					className='mb-2 block text-lg font-medium text-white'
 				>
 					Mensaje
 				</label>
 				<textarea
 					id='message'
 					rows={6}
-					className='focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full resize-none rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400'
+					className='text-md block w-full resize-none rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 shadow-sm'
 					placeholder='Deja tu comentario...'
 					required
 				></textarea>
