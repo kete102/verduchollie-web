@@ -8,10 +8,10 @@ import SectionWithImg from '../../components/SectionWithImg.astro'
 	description='Bodas increibles'
 >
 	<div class='relative h-screen max-h-screen w-full'>
-		<div class='absolute left-6 top-6 z-10 rounded-md bg-black/5 p-2'>
+		<div class='absolute left-6 top-6 z-10 rounded-md bg-black/5'>
 			<a
 				href='/'
-				class='text-2xl font-bold text-amber-100 backdrop-blur-xl md:text-3xl lg:text-4xl'
+				class='p-2 text-2xl font-bold text-white hover:scale-110 md:text-3xl lg:text-4xl'
 				>logo</a
 			>
 		</div>
@@ -19,19 +19,17 @@ import SectionWithImg from '../../components/SectionWithImg.astro'
 			class='flex h-full flex-col items-center justify-center bg-zinc-600 lg:flex-row'
 		>
 			<SectionWithImg
+				img='fondo-boda-4'
+				title='Fotos'
+				link='fotos'
+				className='select-none'
+			/>
+			<SectionWithImg
 				img='fondo-boda-3'
 				title='Videos'
 				link='videos'
 				className='select-none'
 			/>
-			<SectionWithImg
-				img='fondo-boda-4'
-				title='Fotos'
-				link='fotos'
-				className='select-none'
-			>
-				>
-			</SectionWithImg>
 		</div>
 	</div>
 </Layout>
